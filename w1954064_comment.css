@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #545252;
+    z-index: -1;
+}
+.header {
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #eaebed;
+    display: list-item;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+*/ .container_1 {
+    z-index: 1;
+    height: 90px;
+    width: 150%;
+    background: #eaebed;
+    place-items: center;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.navbar a {
+    font-size: 18px;
+    margin: 0 0px;
+    font-weight: 400;
+    position: relative;
+    left: 680px;
+    top: 18px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo img {
+    position: absolute;
+    top: 0px;
+    left: 60px;
+    height: 80px;
+    width: 155px;
+}
+
+.btn {
+    font-size: 15px;
+    color: #000000;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    margin-left: 40px;
+    top: 8px;
+    background: none;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+.btn:focus,
+.btn:hover {
+    color: #1640ca;
+}
+
+.btn:focus:after,
+.btn:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.btn:after {
+    content: "";
+    bottom: -28px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #1640ca;
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+.Comment-box{
+    z-index: 100;
+    width: 70%;
+    background-color: white;
+    border: 1px solid #ccc;
+    margin: 50px;
+    padding: 10px 20px;
+    font-family: 'poppins', sans-serif;
+    border-radius: 5px;
+    margin-left: 14%;
+    margin-top: 135px;
+    
+}
+.Comment-box p{
+    text-align: left;
+    font-size: 35px;
+    color: #777;
+}
+
+.logo img {
+    position: absolute;
+    top: 2px;
+    left: 60px;
+    height: 80px;
+    width: 155px;
+}
+.input {
+    max-width: 400px;
+    width: 200px;
+    height: 44px;
+    background-color: #05060f0a;
+    border-radius: .5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-size: 0.8rem;
+}
+
+.label {
+    display: block;
+    margin-bottom: .3rem;
+    font-size: .9rem;
+    font-weight: bold;
+    color: #05060f99;
+    
+}
+
+.input:hover,
+.input:focus,
+.input-group:hover .input {
+    outline: none;
+    border-color: #05060f;
+}
+
+.input-group:hover .label,
+.input:focus {
+    color: #05060fc2;
+}
+
+.input-group span{
+    position: relative;
+    color: rgb(255, 0, 0);
+    bottom: 3px;
+    right: -10px;
+    font-size: 13px;
+}
+.input-group span img{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: -1px;
+    
+}.experience{
+    display: flex;
+    flex-direction: row;
+}
+.experience ul{
+    list-style-type: none;
+    width: 100%;
+}
+.experience ul li{
+    display: flex;
+    float: left;
+    
+}
+
+
+.feedback_rating input[type = "radio"]{
+    margin: 20px 100px 35px 18px;
+    
+}
+
+textarea{
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+textarea:focus{
+    outline: none;
+    border-color: #05060f;
+}
+.anotherbutton {
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+    margin: 1rem auto;
+    padding: 0.7rem 2rem;
+    border-radius: 30em;
+    border-style: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: transparent;
+    box-shadow: 1px 1px 12px #000000;
+}
+
+.anotherbutton::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    transform: translateX(-101%);
+    transition: all .3s ease;
+    z-index: -1;
+}
+
+.anotherbutton:hover {
+    color: #ffffff;
+    transition: all .3s ease;
+}
+
+.anotherbutton:hover::before {
+    transform: translateX(0);
+}
+
+.resetbutton{
+    cursor: pointer;        
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+    margin: 1rem auto;
+    padding: 0.7rem 2rem;
+    border-radius: 30em;
+    border-style: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: transparent;
+    box-shadow: 1px 1px 12px #000000;
+}
+.resetbutton:hover{
+    color: red;
+    transition: 0.3s;
+}

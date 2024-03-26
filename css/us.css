@@ -1,0 +1,153 @@
+.container {
+	position : relative;
+	width : 200px;
+	height : 200px;
+	cursor : pointer;
+}
+
+#frame img {
+	height : 200px;
+	width : 200px;
+	border-radius: 20px;
+	box-shadow: -15px 25px 40px 10px black;
+}
+
+.info {
+	background-color : black;
+	opacity : 0.8;
+	position : absolute;
+	bottom : 0;
+	width : 200px;
+	overflow : hidden;
+	height : 0;
+	transition-duration : 0.7s;
+}
+
+.container:hover .info {
+	height : 100px;
+}
+
+.container:hover img {
+	opacity : 0.8;
+}
+
+
+.text {
+	color : white;
+	
+	font-weight : 900px;
+	font-size : 15px;
+	text-align : center;
+}
+
+#frame {
+	height : 360px;
+	position :relative;
+	top : 190px;
+	display : flex;
+	justify-content : center;
+	align-items : center;
+	column-gap : 50px;
+	
+}
+
+body {
+	background-image : url('../images/back2.jpg');
+	font-family: 'poppins', sans-serif;
+}
+
+#contentTitle {
+	text-align : center;
+	font-size : 63px;
+	top: 20%;
+	left: 35%;
+	position: absolute;
+}
+
+#avatar {
+	color : white;
+	position : relative;
+	top : 20px;
+}
+.header {
+	height: 75px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #eaebed;
+	display: list-item;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
+
+*/ .container_1 {
+	z-index: 1;
+	height: 90px;
+	width: 150%;
+	background: #eaebed;
+	place-items: center;
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.navbar a {
+	font-size: 18px;
+	margin: 0 0px;
+	font-weight: 400;
+	position: relative;
+	left: 680px;
+	top: 18px;
+}
+
+.navbar {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+}
+
+.logo img {
+	position: absolute;
+	top: 0px;
+	left: 60px;
+	height: 80px;
+	width: 155px;
+}
+
+.btn {
+	font-size: 15px;
+	color: #000000;
+	font-family: inherit;
+	font-weight: 800;
+	cursor: pointer;
+	position: relative;
+	border: none;
+	margin-left: 40px;
+	top: 8px;
+	background: none;
+	text-transform: uppercase;
+	transition: 0.2s;
+}
+
+.btn:focus,
+.btn:hover {
+	color: #1640ca;
+}
+
+.btn:focus:after,
+.btn:hover:after {
+	width: 100%;
+	left: 0%;
+}
+
+.btn:after {
+	content: "";
+	bottom: -28px;
+	left: 50%;
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	background-color: #1640ca;
+	transition-duration: 400ms;
+	transition-property: width, left;
+}

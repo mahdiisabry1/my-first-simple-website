@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+
+
+.header {
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    display: list-item;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+*/ .container_1 {
+    z-index: 1;
+    height: 90px;
+    width: 150%;
+    background: #ffffff;
+    place-items: center;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.navbar a {
+    font-size: 18px;
+    margin: 0 0px;
+    font-weight: 400;
+    position: relative;
+    left: 680px;
+    top: 18px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo img {
+    position: absolute;
+    top: 0px;
+    left: 60px;
+    height: 75px;
+    width: 155px;
+}
+
+.btn {
+    font-size: 15px;
+    color: #000000;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    margin-left: 40px;
+    top: -30px;
+    background: none;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+.btn:focus,
+.btn:hover {
+    color: #1640ca;
+}
+
+.btn:focus:after,
+.btn:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.btn:after {
+    content: "";
+    bottom: -28px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #1640ca;
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+body{
+    height: auto;
+    width: 100%;
+    background-color: black;
+    background-image:url("images/sports-background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100%;
+}
+header{
+    position: relative;
+    top: 20%;
+    left: 0%;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 600;
+    background-image: linear-gradient(45deg, #4f28b9, #f33813);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+
+svg g:hover polyline,
+svg g:hover line{
+    fill: none;
+    stroke-width: 2;
+    stroke: black;
+}
+svg g:hover g text,
+svg g:hover text{
+    font-weight: bold;
+}
+svg g:hover polygon,
+svg g:hover rect,
+svg g:focus polygon,
+svg g:focus rect{
+    fill: hsla(24, 63%, 26%, 0.3);
+    stroke: rgb(172, 41, 41);
+    stroke-width: 2;
+}
+a{
+    color: whitesmoke;
+}
+svg line{
+    stroke: rgb(255, 0, 0);stroke-width:2;
+}

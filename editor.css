@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.background{
+    
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0, 0, 0, 0.75)), 
+    url(images/ediot.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.menu{
+    width: 85%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.logo{
+    width: 150px;
+
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.menu ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.menu ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #1ac6ff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.menu ul li:hover::after{
+    width: 100%;
+}
+
+.r{
+    padding: 0 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 1%;
+}
+.leftc{
+    flex-basis: 55%;
+}
+.rightc{
+    flex-basis: 45%;
+    top: 80px;
+}
+.rightc img{
+    
+    width: 80%;
+    border-radius: 14px;
+    margin-bottom: 15%;
+}
+.leftc h2{
+    font-size: 30px;
+    color: #fff;
+}
+.leftc h1{
+    font-size: 55px;
+    font-weight: 600;
+    color: #fff;
+}
+.leftc p{
+    font-size: 20px;
+    color: bisque;
+    margin: 20px 0 20px;
+}
+.leftc ul li{
+    margin: 5px;
+    color: #fff;
+}
+.soical > a {
+    font-size: 10px;
+    width: 10px;
+    height: 10px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+    padding: 20px;
+
+}
+.social {
+    text-align:left;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 250, 250);
+    
+}
+.role{
+    text-decoration: solid;
+    color: #fff;
+    font-size: 23px;
+}

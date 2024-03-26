@@ -1,0 +1,516 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+/*
+@media (max-width: 575.98px) {
+    .body {
+        font-size: 10px;
+    }
+
+    .navigate a {
+        padding: 15px;
+    }
+
+    .side-nav-logo {
+        width: 10px;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .header {
+            font-size: 10px;
+        }
+    
+        .navigate a {
+            padding: 15px;
+        }
+    
+        .side-nav-logo {
+            width: 10px;
+        }
+}
+
+/*Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .body {
+            font-size: 10px;
+    }
+    
+        .navigate a {
+            padding: 15px;
+        }
+    
+        .side-nav-logo {
+            width: 10px;
+        }
+}
+
+/* Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .body {
+            font-size: 10px;
+        }
+    
+        .navigate a {
+            padding: 15px;
+        }
+    
+        .side-nav-logo {
+            width: 10px;
+        }
+}
+*/
+/*Extra large devices (large desktops, 1200px and up)
+@media (min-width: 100px) {
+    .navbar a{
+        font-size: small;
+    }
+}
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: url(images/gujarattitans.avif);
+    background-position: 33% 10%;
+    background-size: 1800px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 5000px;
+}
+
+.header {
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background:#eaebed;
+    display:list-item ;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.container_1{
+    z-index: 1;
+    height: 75px;
+    width: 150%;
+    background: #eaebed;
+    place-items: center;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.navbar a {
+    font-size: 18px;
+    margin: 0 0px;
+    font-weight: 400;
+    position: relative;
+    left: 680px;
+    top: 18px;
+}
+.navbar{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo img{
+    position: absolute;
+    top: 0px;
+    left: 60px;
+    height: 80px;
+    width: 155px;
+}
+.btn {
+    font-size: 15px;
+    color: #000000;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    margin-left: 40px;
+    top: 8px;
+    background: none;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+.btn:focus,
+.btn:hover {
+    color: #1640ca;
+}
+
+.btn:focus:after,
+.btn:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.btn:after {
+    content: "";
+    bottom: -28px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #1640ca;
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+.Latest_News{
+    position: absolute;
+    top: 500px;
+    width: 90%;
+    height: 18%;
+    left: 5%;
+}
+
+.Latest_News p {
+    color: white;
+    padding: 3px;
+    font-size: 45px;
+    font-weight: 500;
+}
+.Latest_button{
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 8px;
+    border-radius: 30px;
+    border: none;
+    background-color: #780010;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.Latest_button>* {
+    display: inline-block;
+    transition: all ease-in-out .5s;
+}
+.btn_visible {
+    padding: 1.2rem 3rem;
+    text-align: center;
+}
+
+.btn_invisible{
+    width: 100%;
+    position: absolute;
+    padding: 1.2rem 0;
+    left: 0;
+    top: -100%;
+}
+
+.Latest_button:hover .btn_visible {
+    transform: translateY(100%);
+}
+
+.Latest_button:hover .btn_invisible {
+    top: 0;
+}
+
+.Latest_button:focus {
+    outline: none;
+}
+
+.thesecondnavbar{
+    position: sticky;
+    height: 43px;
+    width: 380px;
+    top: 76px;
+    left: 38%;
+    background-color: #eaebed;
+    z-index: 100;
+    display: none;
+    
+}
+.thesecondnavbar .hiddennav{
+    display: flex;
+    
+    
+}
+.thesecondnavbar .hiddennav a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    float: left;
+    padding: 14px;
+    color: #000000;
+    text-decoration: none;
+}
+.thesecondnavbar .hiddennav a:hover{
+    color: #1640ca;
+    transition: 0.3s;
+}
+
+.football_container{
+    background-color: #292929;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 800px;
+    height: 1100px;
+}
+.football_container h3{
+    position: relative;
+    top: 20px;
+    font-size: 50px;
+    color: white;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+.football_container p{
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+    margin-left: 90px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+.trending_player_cards{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    
+}
+.trending_player_cards .trending_list{
+    list-style-type: none;
+    margin-left: 120px;
+    margin-top: 85px;
+    
+}
+
+.trending_player_cards .trending_list li{
+    padding: 40px;
+    float: left;
+    display: flex;
+}
+.card_premierleague {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 80%;
+    margin-left: 150px;
+    height: 400px;
+    padding: 10px;
+    gap: 50px;
+    scroll-padding: 10px;
+    background-color: transparent;
+    scroll-behavior: smooth;
+    
+}
+.card_premierleague .control {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    cursor: pointer;
+    padding: 0px;
+}
+
+.card_premierleague .prev {
+    left: 8%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.card_premierleague .next {
+    right: 8%;
+    top: 35%;
+    transform: translate(50%, -50%);
+}
+.card_premierleague .item {
+    scroll-snap-align: start;
+    flex: 0 0 25%;
+    background: #333333;
+    display: flex;
+    color: white;
+    line-height: 1.3em;
+    font-weight: 400;
+    font-family: sans-serif;
+    border-radius: .2rem;
+    border: 2px solid rgb(38, 36, 36);
+}
+.card_premierleague_1_content{
+    width: 100%;
+    height: 50%;
+    margin-top: 0%;
+}
+.card_premierleague_1_content img{
+    width: 100%;
+    height: 120%;
+    z-index: -1;
+}
+.card_premierleague_card{
+    font-size: 15px;
+    margin-left: 3%;
+    margin-top: 5%;
+    margin-right: 3%;
+    text-align: justify;
+    
+}
+.cricket_container{
+    position: relative;
+    background-color: #292929;
+    top: 800px;
+    height: 1100px;
+    
+}
+.cricket_container h3{
+    font-size: 50px;
+    height: 90px;
+    margin-left: 6%;
+    color: white;
+}
+.cricket_container p{
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+    margin-left: 100px;
+    margin-top: 15px;
+}
+
+.E-sports_container {
+    position: relative;
+    background-color: #292929;
+    top: 800px;
+    height: 1140px;
+}
+.E-sports_container h3{
+    position: relative;
+    top: 50px;
+    font-size: 50px;
+    height: 120px;
+    margin-left: 6%;
+    color: white;
+    
+}
+.E-sports_container p{
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+    margin-left: 100px;
+    margin-top: 35px;
+    
+}
+.badminton_container{
+    position: relative;
+    height: 1100px;
+    top: 800px;
+    background-color: #292929;
+}
+.badminton_container h3{
+    position: relative;
+    top: 50px;
+    font-size: 50px;
+    height: 90px;
+    margin-left: 6%;
+    color: white;
+}
+.badminton_container p{
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.trending_player_cards .trending_list .card {
+    position: relative;
+    width: 250px;
+    height: 320px;
+    color: #2e2d31;                                                                    /**/
+    background: #131313;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+.trending_player_cards .trending_list .temporary_text {
+    font-weight: bold;
+    font-size: 24px;
+    padding: 6px 12px;
+    color: #f8f8f8;
+}
+
+.trending_player_cards .trending_list .card_title {
+    font-weight: bold;
+}
+
+.trending_player_cards .trending_list .card_content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* edit the width to fit card */
+    width: 100%;
+    height: 240px;
+    padding: 20px;
+    background: #f2f2f2;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    /* edit here to change the height of the content box */
+    transform: translateY(150px);
+    transition: transform .25s;
+}
+
+.trending_player_cards .trending_list .card_content::before {
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+}
+
+.trending_player_cards .trending_list .card_title {
+    color: #131313;
+    line-height: 35px;
+}
+
+.trending_player_cards .trending_list .card_subtitle {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.trending_player_cards .trending_list .card_description {
+    margin-left: 0px;
+    font-size: 13px;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.trending_player_cards .trending_list .card:hover .card_content {
+    transform: translateY(0);
+}
+
+.trending_player_cards .trending_list .card:hover .card_description {
+    opacity: 1;
+    transition-delay: .25s;
+}
+
+.footer{
+    position: absolute;
+    height: 230px;
+    width: 100%;
+    z-index: 100;
+    background-color: #000000;
+    margin-top: 48%;
+}
+
+.footer .footer_bottom_content{
+    color: aliceblue;
+    position: absolute;
+    left: 45%;
+    top: 50%;
+}
+.footer .footer_bottom_content a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+.footer .footer_bottom_content a:hover{
+    color: #1640ca;
+    transition: 0.2s;
+}

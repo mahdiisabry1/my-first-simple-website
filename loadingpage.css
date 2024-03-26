@@ -1,0 +1,34 @@
+.container{
+    position: absolute;
+    display: flex;
+    height: 80%;
+    width: 80%;
+}
+.container .loader {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+
+    /* https: //freefrontend.com/css-loaders/ */
+    
+    --dim: 5rem;
+    width: var(--dim);
+    height: var(--dim);
+    border: 7px solid #fdfdfd;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    animation: spin_51 1.5s infinite linear;
+}
+
+@keyframes spin_51 {
+    from {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+/* reference are added exactly where i have used them */

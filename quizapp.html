@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel = "stylesheet" href = "css/quizapp.css">
+		<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+		<link rel = "stylesheet" href = "css/navigationbar.css">
+		<title>Welcome to Quiz</title>
+	</head>
+
+
+<body>
+
+	
+	<div id "outerFrame">
+		<header class="header">
+			<div class="container_1">
+				<div class="logo">
+					<a href="Homepage.html" target="_blank"><img src="images/Sportslogo.png.png" alt=""></a>
+				</div>
+				<nav class="navbar">
+					<a href="w1954064.html" class="active">
+						<button class="btn" id="dropbtn">
+							Home
+						</button>
+					</a>
+					<a href="w1954064_Comments.html">
+						<button class="btn">
+							Comments
+						</button>
+					</a>
+					<a href="Cart.html" target="_blank">
+						<button class="btn">
+							Shop
+						</button>
+					</a>
+					<a href="quizapp.html" target="_blank">
+						<button class="btn">
+							Quiz
+						</button>
+					</a>
+					<a href="w1956104_SVG.html" target="_blank">
+						<button class="btn">
+							Site-Map
+						</button>
+					</a>
+					<a href="w1956104_gallery.html" target="_blank">
+						<button class="btn">
+							Gallery
+						</button>
+					</a>
+					<a href="us.html" target="_blank">
+						<button class="btn">
+							About-Us
+						</button>
+					</a>
+					<a href="#"></a>
+				</nav>
+			</div>
+		</header>
+		
+		
+		<a id = "myavatar" href = "editor.html" target = "_blank"><img alt = "">Page Editor</a>
+		<!--Avatar Icon on IconScout-->
+		
+		<!--<a href="https://iconscout.com/icons/avatar" target="_blank">Avatar Icon</a> by <a href="https://iconscout.com/contributors/dmitriy-bondarchuk" target="_blank">Dmitriy Bondarchuk</a>-->
+		
+		
+		<div id = "quizBox">
+		
+		
+			<div id = "count">
+				<div class = "counter"><p>Question <span id = "questionNo"></span>/10</p></div>
+				<div class = "counter"><p>Timer : <span id = "time"></span></p></div>
+			</div>
+			
+			
+			
+			<div id = "contentBox">
+				<div id = "picBox" class = "secondSet"><img></div>
+				<div id = "question" class = "secondSet"></div>
+			</div>
+			
+			
+			
+			<div id = "innerContainer">
+				<div class = "choice" id = "divOption1"><label for = "choiceA" id = "choiceLabel1" data-number = "1"></label><input type = "radio" id = "choiceA" class = "radioButton" value = "1" name = "button"></div>
+				<div class = "choice" id = "divOption2"><label for = "choiceB" id = "choiceLabel2" data-number = "2"></label><input type = "radio" id = "choiceB" class = "radioButton" value = "2" name = "button"></div>
+				<div class = "choice" id = "divOption3"><label for = "choiceC" id = "choiceLabel3" data-number = "3"></label><input type = "radio" id = "choiceC" class = "radioButton" value = "3" name = "button"></div>
+				<div class = "choice" id = "divOption4"><label for = "choiceD" id = "choiceLabel4" data-number = "4"></label><input type = "radio" id = "choiceD" class = "radioButton" value = "4" name = "button"></div>
+				
+				
+				<button id = "button"><b>N E X T</b></button>
+				
+			
+				<div id = "optionValidator">
+				
+					<h1 id = "validatorHead">NO OPTIONS PICKED</h1>
+					
+					
+					<button id = "continue"><b>C O N T I N U E</b></button>
+					
+				</div>
+			
+			</div>
+			
+			<div  id = "feedbackPane">
+				<br><h2 id = "headingfb" class = "feedbackContent"></h2><br><br>
+				<p class = "feedbackContent">Question : 10</p>
+				<p id = "falsefb" class = "feedbackContent"></p>
+				<p id = "scorefb" class = "feedbackContent"></p>
+				<p id = "gradefb" class = "feedbackContent"></p>
+				<p id = "timefb" class = "feedbackContent"></p>
+				<p id = "commentfb" class = "feedbackContent"></p>
+			
+				<button class = "feedbackbtn" id = "reset"><b>R E S E T</b></button>
+			</div>
+		</div>
+		
+		<div id = "startPane">
+			<h1 id = "startHead" style="letter-spacing: 10px;"></h1>
+			<button id = "startbtn"><b>S T A R T&nbsp &nbspQ U I Z</b></button>
+			<img src = "images/download11.webp" alt = "icon" id = "icon" style="width: 90%; height: 70%; z-index: -1;">
+		</div>
+		
+	</div>	
+	
+	<br><br>
+	
+
+
+	<script src = "js/quizapp.js"></script>
+		
+	</body>
+</html>

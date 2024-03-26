@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack</title>
+    <link rel="stylesheet" href="w1954064_comment.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container_1">
+            <div class="logo">
+                <a href="w1954064.html" target="_blank"><img src="images/Sportslogo.png.png" alt=""></a>
+            </div>
+            <nav class="navbar">
+                <a href="w1954064.html" class="active" style="text-decoration: none;">
+                    <span class="btn" id="dropbtn">
+                        Home
+                    </span>
+                </a>
+                <a href="w1954064_Comments.html" style="text-decoration: none;" target="_blank">
+                    <span class="btn" style="color: blue;">
+                        Comments
+                    </span>
+                </a>
+                <a href="Cart.html" target="_blank" style="text-decoration: none;">
+                    <span class="btn">
+                        Shop
+                    </span>
+                </a>
+                <a href="quizapp.html" target="_blank" style="text-decoration: none;">
+                    <span class="btn">
+                        Quiz
+                    </span>
+                </a>
+                <a href="w1956104_SVG.html" target="_blank" style="text-decoration: none;">
+                    <span class="btn">
+                        Site-Map
+                    </span>
+                </a>
+                <a href="w1956104_gallery.html" target="_blank" style="text-decoration: none;">
+                    <span class="btn">
+                        Gallery
+                    </span>
+                </a>
+                <a href="us.html" target="_blank" style="text-decoration: none;">
+                    <span class="btn">
+                        About-Us
+                    </span>
+                </a>
+                <a href="#"></a>
+            </nav>
+        </div>
+    </header>
+    <div class="logo">
+        <a href="w1954064.html" target="_blank"><img src="images/Sportslogo.png.png" alt=""></a>
+    </div>
+    <!-- Designing the comment box-->
+    <div class="Comment-box">
+        <p>Leave a comment</p><br>
+        <!-- Validating-->
+        <form onsubmit="validateform()" action="formsubmitted.html" class="comment-form">
+            <div class="input-group">
+                <div class="label">FullName</div>
+                <input autocomplete="off" name="name" id="contact-name" class="input" type="text" onkeyup="validateName()">
+                <span id="name-error"></span>
+                <div></div>
+            </div>
+            <br>
+            <div class="input-group">
+                <div class="label">E-mail</div>
+                <input autocomplete="off" name="Email" id="mail-name" class="input" type="email" onkeyup="validatemail()">
+                <span id="mail-error"></span>
+            </div>
+            <br>
+            <!-- Questions-->
+            <div class="feedback_rating">
+            <h3 class="label">What was your overall experience using our website ?</h3>
+            <div class="rating">
+                <span style="font-size: 30px; position: relative; margin-top: 2px;">&#128526;</span><input type="radio" name="experience" checked>
+                <span style="font-size: 30px; position: relative; margin-top: 2px;">&#128527;</span><input type="radio" name="experience">
+                <span style="font-size: 30px; position: relative; margin-top: 2px;">&#128528;</span><input type="radio" name="experience">
+                <span style="font-size: 30px; position: relative; margin-top: 2px;">&#128530;</span><input type="radio" name="experience">
+                <span style="font-size: 30px; position: relative; margin-top: 2px;">&#128545;</span><input type="radio" name="experience">
+            </div>
+            </div>
+            <div class="feedback_rating">
+                <h3 class="label">How would you rate the speed and performance of our website?</h3>
+                <div class="rating">
+                    <span style="font-size: 30px; position: relative; margin-top: 2px;">&#128526;</span><input type="radio" name="Speed_perfomance" checked>
+                    <span style="font-size: 30px; position: relative; margin-top: 2px;">&#128527;</span><input type="radio" name="Speed_perfomance">
+                    <span style="font-size: 30px; position: relative; margin-top: 2px;">&#128528;</span><input type="radio" name="Speed_perfomance">
+                    <span style="font-size: 30px; position: relative; margin-top: 2px;">&#128530;</span><input type="radio" name="Speed_perfomance">
+                    <span style="font-size: 30px; position: relative; margin-top: 2px;">&#128545;</span><input type="radio" name="Speed_perfomance">
+                </div>
+            </div>
+            <div class="feedback_rating">
+                <h3 class="label">How visually appealing do you find our website ?</h3>
+                <div class="rating">
+                    <span style="font-size: 30px; position: relative; margin-top: 2px;">&#128526;</span><input type="radio" name="visually" checked>
+                    <span style="font-size: 30px; position: relative; margin-top: 2px;">&#128527;</span><input type="radio" name="visually">
+                    <span style="font-size: 30px; position: relative; margin-top: 2px;">&#128528;</span><input type="radio" name="visually">
+                    <span style="font-size: 30px; position: relative; margin-top: 2px;">&#128530;</span><input type="radio" name="visually">
+                    <span style="font-size: 30px; position: relative; margin-top: 2px;">&#128545;</span><input type="radio" name="visually">
+                </div>
+            </div>
+            <div class="feedback_rating">
+                <h3 class="label">Did you find the information on our website helpful and informative?</h3>
+                <div class="rating">
+                    <span style="font-size: 30px; position: relative; margin-top: 2px;">&#128526;</span><input type="radio" name="informative" checked>
+                    <span style="font-size: 30px; position: relative; margin-top: 2px;">&#128527;</span><input type="radio" name="informative">
+                    <span style="font-size: 30px; position: relative; margin-top: 2px;">&#128528;</span><input type="radio" name="informative">
+                    <span style="font-size: 30px; position: relative; margin-top: 2px;">&#128530;</span><input type="radio" name="informative">
+                    <span style="font-size: 30px; position: relative; margin-top: 2px;">&#128545;</span><input type="radio" name="informative">
+                </div>
+            </div>
+            <div class="feedback_rating">
+                <h3 class="label">How would you rate the quality of the content on the website ? </h3>
+                <div class="rating">
+                    <span style="font-size: 30px; position: relative; margin-top: 2px;">&#128526;</span><input type="radio" name="quality" checked>
+                    <span style="font-size: 30px; position: relative; margin-top: 2px;">&#128527;</span><input type="radio" name="quality">
+                    <span style="font-size: 30px; position: relative; margin-top: 2px;">&#128528;</span><input type="radio" name="quality">
+                    <span style="font-size: 30px; position: relative; margin-top: 2px;">&#128530;</span><input type="radio" name="quality">
+                    <span style="font-size: 30px; position: relative; margin-top: 2px;">&#128545;</span><input type="radio" name="quality">
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <div class="label">What could we do to improve your experience using our website?</div><br>
+                <textarea name="text" id="improve"></textarea>
+            </div>
+            <br><br>
+            <div class="input-group">
+                <div class="label">Is there anything else you would like to share with us about your experience using our website?</div><br>
+                <textarea name="text" id="text"></textarea>
+            </div>
+            <br>
+
+            <button class="anotherbutton" onclick="return validateform()"> Submit</button>
+            <span id="submiterror" style="left: 0px; color: red; font-size: 15px;"></span> 
+            <input type="reset" class="resetbutton">  
+        </form>
+    </div>
+
+    <script src="w1954064_comment.js"></script>
+</body>
+</html>
