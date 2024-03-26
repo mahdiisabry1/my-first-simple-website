@@ -1,3 +1,5 @@
+My first fucking website, which I created solely with HTML, CSS, and a touch of JavaScript
+
 ![Screenshot 2024-03-26 150120](https://github.com/mahdiisabry1/my-first-simple-website/assets/141149923/1ffe2964-7e91-42c1-9fd6-eea013d3367e)
 
 ![Screenshot 2024-03-26 150120](https://github.com/mahdiisabry1/my-first-simple-website/assets/141149923/b0cedfa1-44a0-4303-bc6b-687a3610b087)
